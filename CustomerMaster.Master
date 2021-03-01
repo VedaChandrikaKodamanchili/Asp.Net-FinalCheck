@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CustomerMaster.master.cs" Inherits="Movie_Cruiser.CustomerMaster" %>
+<%@ Register Src="~/CustomerHeader.ascx" TagPrefix="h1" TagName="head" %>
+<%@ Register Src="~/CustomerFooter.ascx" TagPrefix="f1" TagName="Foot" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            
+
+            <h1:head id="h" runat="server"></h1:head>
+           
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            
+            <f1:Foot id ="f" runat="server"></f1:Foot>
+        </div>
+    </form>
+</body>
+</html>
